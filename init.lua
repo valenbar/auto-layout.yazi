@@ -13,13 +13,13 @@
 --   If you want to customize the breakpoints where the column shifts happen:
 --
 --   require("auto-layout").setup({
---     breakpoint_large = 100,  -- new large window threshold, defaults to 80
---     breakpoint_medium = 50,  -- new medium window threshold, defaults to 40
+--     breakpoint_large = 110,  -- new large window threshold, defaults to 100
+--     breakpoint_medium = 60,  -- new medium window threshold, defaults to 50
 --   })
 
 local config = {
-  breakpoint_large = 80,  -- default large window threshold
-  breakpoint_medium = 40, -- default medium window threshold
+  breakpoint_large = 100,  -- default large window threshold
+  breakpoint_medium = 50, -- default medium window threshold
 }
 
 local M = {}

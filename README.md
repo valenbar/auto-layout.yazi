@@ -18,7 +18,7 @@ require("auto-layout")
  If you want to customize the breakpoints where the column shifts happen:
 ```lua
 require("auto-layout").setup({
-   breakpoint_large = 100,  -- new large window threshold, defaults to 80
-   breakpoint_medium = 50,  -- new medium window threshold, defaults to 40
+   breakpoint_large = 110,  -- new large window threshold, defaults to 100
+   breakpoint_medium = 60,  -- new medium window threshold, defaults to 50
  })
 ```
