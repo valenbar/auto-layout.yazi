@@ -39,27 +39,27 @@ function Tab:layout()
     self._chunks = ui.Layout()
       :direction(ui.Layout.HORIZONTAL)
       :constraints({
-        ui.Constraint.Ratio(MANAGER.ratio.parent,  MANAGER.ratio.all),
-        ui.Constraint.Ratio(MANAGER.ratio.current, MANAGER.ratio.all),
-        ui.Constraint.Ratio(MANAGER.ratio.preview, MANAGER.ratio.all),
+        ui.Constraint.Ratio(MGR.ratio.parent,  MGR.ratio.all),
+        ui.Constraint.Ratio(MGR.ratio.current, MGR.ratio.all),
+        ui.Constraint.Ratio(MGR.ratio.preview, MGR.ratio.all),
       })
       :split(self._area)
   elseif w > config.breakpoint_medium then
     self._chunks = ui.Layout()
       :direction(ui.Layout.HORIZONTAL)
       :constraints({
-        ui.Constraint.Ratio(0,                              MANAGER.ratio.all),
-        ui.Constraint.Ratio(MANAGER.ratio.current + MANAGER.ratio.parent, MANAGER.ratio.all),
-        ui.Constraint.Ratio(MANAGER.ratio.preview   + MANAGER.ratio.parent, MANAGER.ratio.all),
+        ui.Constraint.Ratio(0,                              MGR.ratio.all),
+        ui.Constraint.Ratio(MGR.ratio.current + MGR.ratio.parent, MGR.ratio.all),
+        ui.Constraint.Ratio(MGR.ratio.preview   + MGR.ratio.parent, MGR.ratio.all),
       })
       :split(self._area)
   else
     self._chunks = ui.Layout()
       :direction(ui.Layout.HORIZONTAL)
       :constraints({
-        ui.Constraint.Ratio(0,               MANAGER.ratio.all),
-        ui.Constraint.Ratio(MANAGER.ratio.all, MANAGER.ratio.all),
-        ui.Constraint.Ratio(0,               MANAGER.ratio.all),
+        ui.Constraint.Ratio(0,               MGR.ratio.all),
+        ui.Constraint.Ratio(MGR.ratio.all, MGR.ratio.all),
+        ui.Constraint.Ratio(0,               MGR.ratio.all),
       })
       :split(self._area)
   end
